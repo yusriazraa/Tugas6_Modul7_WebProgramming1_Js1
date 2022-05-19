@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modul7_PO8_Javascript</title>
+
+    <script type="text/javascript">
+        //3. Javascript Statement & 4. Java Script Komentar
+
+        //Contoh Penulisan Judul
+        document.write("<h1> Ini Judul </h1>");
+        /*
+        Penulisan Judul dan
+        Penulisan Paragraf
+        */
+        document.write("<p> Ini Paragraf (Pembelajaran Modul 7 Javascript)</p>");
+        document.write("<p> Ini Paragraf yang lain (pengenalan dasar Javascript)</p>");
+
+                // 9. Function
+
+        //Contoh Function
+        function pesan ()
+        {
+            Alert("Halo Semuanya saya yusri");
+        }
+        pesan();
+    </script>
+
+
+</head>
+<body>
+    <script type="text/javascript">
+         //5. Javascript Varialbe
+
+        //Contoh varialbel #1
+        var nama="Yusri";
+        var peringkat=3;
+        var kategori;
+
+        kategori="Lomba Desain Web";
+        document.write(nama);
+        document.write(peringkat);
+        document.write(kategori);
+        
+        //Contoh Variabel #2
+        document.write ("<br>");
+        document.write ("<br>");
+        document.write("Selamat "+nama+" anda peringkat "+peringkat+" Kategori : "+kategori);
+
+
+        //6. Java Script Operator
+
+        //6.3 Contoh Operator Logika
+        document.write("<br>");
+        var nilaiujian=90;
+        var nilaiakhir="B";
+
+        if (nilaiujian >= 80 && nilaiujian<= 100) {
+            nilaiakhir="B";
+        }
+        document.write("Nilai Akhir Anda : "+nilaiakhir);
+
+        //6.4 Contoh Operator Konditional
+        var umur=18;
+        var layaksim;
+
+        layaksim=(umur>17)?"Layak":"Tidak Layak";
+        document.write("<br>");
+        document.write(layaksim);
+
+        // 7. Kodnisi Percabangan
+         document.write("<br>");
+
+        // 7.1 If Statement
+        var umur=18;
+
+        if (umur=17)
+        {
+            document.write("Anda harus memiliki KTP")
+        }
+
+        // 7.2 If - Else Statement
+        document.write("<br>");
+        var nilai=70;
+
+        if (nilai>60) {
+            document.write("Selamat Anda Lulus");
+        }
+        else{
+            document.write("Maaf Anda Tidak Lulus");
+        }
+
+        // 7.3 If - Else - Else Statement
+        var nilaiakhir=60;
+
+        if (nilai>=80 && nilaiakhir <=100) {
+            document.write ("<h2>Nilai Anda A</h2>");
+        } else if (nilaiakhir>=70 && nilaiakhir<80) {
+            document.write ("<h2>Nilai Anda B</h2>");
+        } else if (nilaiakhir>=60 && nilaiakhir<70) {
+            document.write ("<h2>Nilai Anda C</h2>");
+        } else if (nilaiakhir>=50 && nilaiakhir<60) {
+            document.write ("<h2>Nilai Anda D</h2>");
+        }  else {
+            document.write ("<h2>Nilai Anda  E</h2>");
+        }
+
+        // 7.4 Switch Statement
+        document.write("<br>");
+        var silapancasila=1;
+
+        switch (silapancasila) {
+            case 1:
+                document.write("Ketuhanan Yang Maha Esa");
+                break;
+            case 2:
+                document.write("Kemanusiaan Yang Adil Dan Beradab");
+                break;
+            case 3:
+                document.write("Persatuan Indonesia");
+                break;
+            case 4:
+                document.write("Kerakyatan yang Dipimpin Oleh Hikmat Kebijaksanaan Dalam Permusyawaratan Perwakilan");
+                break;
+            case 5:
+                document.write("Keadialan Sosial Bagi Seluruh Rakyat Indonesia");
+                break;
+        }
+
+        // 7.5 For Loop
+        document.write("<br>");
+        
+        for (var i=1;i<=10; i++) {
+            document.write("<h1>Judul Ke "+ i +"</h1>");
+        }
+
+        // 7.5 For Loop
+         document.write("<br>");
+         
+         var i=1;
+         while (i<1000) {
+             document.write(i +"<h1>Saya akan giat Berlatih </h1>");
+             i++;
+        }
+
+        // 8. Popup Boxes Javascript
+
+        //8.1 Alert Box
+        alert("Ini Adalah Alert Box!")
+        
+        // 8.2 Confirm Box
+        var r=confirm("Klik salah satu tombol");
+        if (r==true) {
+            alert("Anda menKlik Ok!");
+        } else{
+            alert("Anda menKlik Cancel!");
+        }
+
+        // 8.3 Promt Box
+        var nama=prompt ("Silakan Masukan Nama Anda !", "Contoh :Yusri Azra");
+        document.write("<h1>Halo "+ nama + "! Selamat datang di Website Kami</h1>");
+    </script>
+
+    <form>
+        <input type="button" value="Klik Disini!" onclick="pesan()"/>
+    </form>
+</body>
+</html>
